@@ -26,7 +26,7 @@ jobs:
 
       # Ejecuta Checkstyle para verificar el estilo del código de los test y del main
       - name: Run Checkstyle
-        run: cd demo && ./gradlew checkstyleMain checkstyleTest
+        run:  ./gradlew checkstyleMain checkstyleTest
 
       # Ejecuta el comando para compilar el proyecto
       - name: Build with Gradle
