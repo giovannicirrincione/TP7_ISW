@@ -36,7 +36,7 @@ tasks.named('test') {
 
 checkstyle {
 	toolVersion = '8.45'  // Especifica la versión de Checkstyle
-	configFile = file('/build/reports/checkstyle/checkstyle.xml')  // Ruta del archivo de configuración de Checkstyle
+	configFile = file('/config/checkStyle/checkStyle.xml')  // Ruta del archivo de configuración de Checkstyle
 }
 
 tasks.withType(Checkstyle) {
