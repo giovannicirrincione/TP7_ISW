@@ -24,7 +24,7 @@ public class ProductoControllerTests {
 
     @Autowired
     private MockMvc mockMvc;
-
+//.
     @MockBean
     private ProductoServiceImpl productoService;
 
