@@ -1,10 +1,8 @@
 name: Java CI with Gradle
 
 on:
-  push:
-    branches: [ main ]
   pull_request:
-    branches: [ main ]
+    branches: [ develop ]
 permissions:
   contents: read
 jobs:
@@ -20,9 +18,16 @@ jobs:
           distribution: 'temurin'
           java-version: '17'
 
-      # Ejecuta los tests
+      # Ejecuta los tests (tenemos unitatrios y de integracion juntos)
       - name: Test with Gradle
         run: cd demo && ./gradlew test
+
+      # Ejecuta Checkstyle para verificar el estilo del código del main
+      - name: Run Checkstyle Main
+        run: cd demo && ./gradlew checkstyleMain
+      # Ejecuta Checkstyle para verificar el estilo del código de los Tests
+      - name: Run Checkstyle Tests
+        run: cd demo && ./gradlew checkstyleTest
 
       # Ejecuta el comando para compilar el proyecto
       - name: Build with Gradle
