@@ -22,7 +22,7 @@ public class ProductoRepositoryTests {
     @Test
     void testBusquedaPorNombre() throws Exception {
         Producto producto = new Producto();
-        producto.setNombre("camiseta");
+        producto.setNombre("camisetax");
 
         List<Producto> listaEnviada = new ArrayList<>();
         listaEnviada.add(producto);
