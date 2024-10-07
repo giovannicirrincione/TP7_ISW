@@ -29,7 +29,7 @@ public class ProductoControllerTests {
     private ProductoServiceImpl productoService;
 
     @Test
-    void testBusquedaPorNombre() throws Exception{
+    void testBusquedaPorNombre() throws Exception {
 
         String nombre = "camiseta";
 
