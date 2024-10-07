@@ -21,7 +21,7 @@ public class ProductoTests {
         // Crear un nuevo objeto Producto
         Producto producto = new Producto();
         // Establecer el id del producto
-        producto.setId(2);
+        producto.setId(1);
         // Obtener el id del producto
         int result = producto.getId();
         // Verificar que el id es el esperado
